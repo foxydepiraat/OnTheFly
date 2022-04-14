@@ -19,7 +19,7 @@
         <input type="submit" name="btnOverzicht" value="OVERZICHT"  class="btnHome"/></br>
         naam van vliegtuig:<select name="type">
             <?php
-                $query="SELECT * FROM vliuchten";
+                $query="SELECT * FROM vluchten";
                 $stm=$conn->prepare($query);
                 $stm->execute();
                 $type=$stm->fetchAll(PDO::FETCH_OBJ);
