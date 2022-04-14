@@ -36,9 +36,9 @@
         aankomst datum:<input type="date" name="aanDate"/></br>
         bestemmingen:<input type="text" name="txtbestemming"/></br>
         Status:<select name="Status">
-                    <option namw="klaar voor gebruik">klaar voor gebruik</option>
-                    <option namw="verlaat">verlaat</option>
-                    <option namw="vertrokken">vertrokken</option>
+                    <option name="klaar voor gebruik">klaar voor gebruik</option>
+                    <option name="verlaat">verlaat</option>
+                    <option name="vertrokken">vertrokken</option>
                     <option name ="cancelled">cancelled</option>
                 </select></br>
                 <input type="submit" name="btnSave" value="Plannen" class="btnHome"/>
