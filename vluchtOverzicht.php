@@ -1,5 +1,7 @@
 <?php
+// connect met de databse aan deze pagina
  require ('DBFly.php');
+// gegevens ophalen van de database tabel vluchten 
 $query = "SELECT * FROM vluchten";
 $stm = $conn->prepare($query);
 $stm->execute();
@@ -22,7 +24,7 @@ $vliegtuig = $stm->fetchAll(PDO::FETCH_OBJ);
         <input type="submit" name="btnZoek" value="ZOEK" class="btnHome"/>
     </form>
 <?php
-// zoeken van active of alle vliegtuigen
+// zoeken van active of alle vliegtuigen weergeven
 if(isset($_POST['btnZoek']) && $_POST['radioStatus'] == 'vertrokken'){
     $vertrokken=$_POST['radioStatus'];
     
